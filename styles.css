@@ -94,7 +94,6 @@ h1 {
   align-items: center;
   padding-top: 60px;
   height: auto;
-  size: 24px;
   color: #191919;
   font-size: 24px;
 }
@@ -120,6 +119,7 @@ h1 {
   display: flex;
   gap: 24px;
   padding: 0;
+  align-items: center;
 }
 
 .names {
@@ -224,7 +224,75 @@ h1 {
 
 .new {
   flex-direction: row;
+  color: #191919;
+  gap: 24px;
 }
 
 .news-h1 {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.news-p {
+  font-size: 16px;
+}
+
+.Afisha {
+  color: #191919;
+  height: auto;
+  font-size: 48px;
+  font-weight: bold;
+  align-items: flex-start;
+}
+
+.anonses {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 1296px;
+  height: 855px;
+}
+
+.anonses_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 60px;
+  height: auto;
+  color: #191919;
+  font-size: 24px;
+}
+
+.anonses_word {
+  color: #191919;
+  height: auto;
+  font-size: 48px;
+  font-weight: bold;
+  align-items: flex-start;
+}
+
+.anonses_footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 27px;
+}
+
+.anons {
+  display: flex;
+  flex-direction: row;
+  color: #191919;
+  align-items: center;
+  gap: 27px;
+}
+
+.data {
+  border: none;
+  width: 100px;
+  height: 98px;
+  padding: 16px 20px 16px 20px;
+  border-radius: 12px;
+  color: white;
+  background-color: #05b093;
 }

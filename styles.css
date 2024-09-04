@@ -13,7 +13,8 @@ body {
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  padding: 32px, 0px, 32px, 0px;
+  flex-wrap: wrap;
+  padding: 32px 0px 32px 0px;
   gap: 10px;
   width: 100%;
   padding-top: 10px;
@@ -26,7 +27,7 @@ body {
 .btns {
   height: 100%;
   border: none;
-  gap: 5%;
+  gap: 10px;
   color: #ffffff;
   background-color: #191919;
 }
@@ -35,16 +36,112 @@ body {
 }
 
 .slider {
+  display: flex;
+  flex-direction: row;
   gap: 24px;
   padding-top: 60px;
   color: #191919;
 }
 
 .main-img {
-  height: 80%;
+  height: 75%;
+  width: 75%;
+  border-radius: 12px;
 }
 
 .slider_previews {
+  display: flex;
+  flex-direction: column;
   gap: 16px;
   color: #191919;
+}
+
+.dots {
+  width: 6px;
+  height: 6px;
+  border-radius: 1px;
+  background-color: rgb(255, 255, 255);
+  rotate: 45deg;
+}
+
+.opera {
+  display: flex;
+  padding: 12px 16px 12px 16px;
+  gap: 10px;
+  background: #19191915;
+  border-radius: 16px;
+}
+
+.event_posters {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 60%;
+}
+
+h1 {
+  color: #191919;
+}
+
+.heading-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 60px;
+  height: auto;
+  size: 24px;
+  color: #191919;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.event_posters-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 60px 32px 60px;
+  gap: 80px;
+}
+
+.fest {
+  display: flex;
+  gap: 24px;
+}
+
+.names {
+  color: #191919;
+}
+
+.poster {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
+  padding: 32px 60px 32px 60px;
+  width: 100%;
+  color: #191919;
+  background-color: #1919190d;
+}
+
+.ticket {
+  width: 175px;
+  height: 51px;
+  padding: 15px 30px 14px 30px;
+  border-radius: 50px;
+  gap: 10px;
+  border: none;
+  color: white;
+  background-color: #05b093;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  height: 119px;
+  width: 79px;
 }

@@ -196,4 +196,35 @@ h1 {
 
 .news_header {
   color: #191919;
+  height: auto;
+  font-size: 48px;
+  font-weight: bold;
+  align-items: flex-start;
+}
+
+.news-calendar {
+  gap: 60px;
+  padding-top: 180px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.news {
+  width: 636px;
+  height: 521px;
+}
+
+.news-footer {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.new {
+  flex-direction: row;
+}
+
+.news-h1 {
 }

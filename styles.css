@@ -6,6 +6,7 @@ body {
   padding: 0;
   margin: 0;
   color: rgb(255, 255, 255);
+  background-color: #ededed;
 }
 
 .header {
@@ -41,6 +42,8 @@ body {
   gap: 24px;
   padding-top: 60px;
   color: #191919;
+  width: 1296px;
+  height: 497px;
 }
 
 .main-img {
@@ -76,7 +79,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  width: 60%;
+  width: 1296px;
+  height: 855px;
 }
 
 h1 {
@@ -92,11 +96,15 @@ h1 {
   height: auto;
   size: 24px;
   color: #191919;
+  font-size: 24px;
 }
 
 .icon {
+  display: flex;
+  justify-content: center;
   width: 40px;
   height: 40px;
+  align-items: center;
 }
 
 .event_posters-footer {
@@ -111,10 +119,14 @@ h1 {
 .fest {
   display: flex;
   gap: 24px;
+  padding: 0;
 }
 
 .names {
+  padding: 0;
   color: #191919;
+  font-size: 32px;
+  font-weight: 900;
 }
 
 .poster {
@@ -123,9 +135,10 @@ h1 {
   align-items: center;
   border-radius: 16px;
   padding: 32px 60px 32px 60px;
-  width: 100%;
   color: #191919;
   background-color: #1919190d;
+  gap: 40px;
+  width: 100%;
 }
 
 .ticket {
@@ -144,4 +157,43 @@ h1 {
   align-items: center;
   height: 119px;
   width: 79px;
+  padding: 0;
+  margin: 0;
+  font-size: 64px;
+  justify-content: center;
+}
+
+.img-2 {
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.poster-info {
+  align-content: space-between;
+  width: 415px;
+  height: 177px;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.month {
+  font-size: 32px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.poster-date {
+  width: 79px;
+  height: 119px;
+  gap: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.news_header {
+  color: #191919;
 }

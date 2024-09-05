@@ -424,9 +424,10 @@ footer {
 
 .months {
   display: flex;
-  align-self: flex-start;
+  align-self: center;
   font-size: 32px;
   padding-bottom: 50px;
+  width: 120px;
 }
 
 .arrow1 {

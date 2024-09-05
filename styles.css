@@ -348,7 +348,6 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  align-items: center;
   flex-wrap: wrap;
   padding: 32px 0px 32px 0px;
   gap: 10px;
@@ -380,6 +379,73 @@ footer {
 
 .fests {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+}
+
+.fests-name {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.name1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-self: flex-start;
+}
+
+.contacts-name {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.grid-month-buttons {
+  display: flex;
+  gap: 20px;
+  background-color: #1919190d;
+}
+
+.buttons-month {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: #191919;
+  align-items: flex-end;
+}
+
+.buttons {
+  display: flex;
+  width: 104px;
+  height: 48px;
+  gap: 8px;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.months {
+  display: flex;
+  align-self: flex-start;
+  font-size: 32px;
+  padding-bottom: 50px;
+}
+
+.arrow1 {
+  align-items: flex-end;
+  padding: 12px;
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  color: white;
+  background-color: #05b093;
+}
+.arrow2 {
+  align-items: flex-end;
+  padding: 12px;
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  color: white;
+  background-color: #05b093;
 }

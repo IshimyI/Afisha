@@ -17,7 +17,6 @@ main {
 .header {
   padding: 32px 64px 32px 64px;
   gap: 10px;
-  width: 100%;
   margin: 0;
   color: #ffffff;
   background-color: #191919;
@@ -27,6 +26,15 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .btns {
@@ -125,6 +133,7 @@ h1 {
   color: #191919;
   font-size: 32px;
   font-weight: 900;
+  margin: 0;
 }
 
 .poster {
@@ -168,12 +177,19 @@ h1 {
 }
 
 .poster-info {
-  align-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
   max-width: 415px;
-  height: 177px;
   gap: 40px;
   padding: 0;
   margin: 0;
+}
+
+.img-scale {
+  display: flex;
+  width: 117px;
+  height: 42.83px;
 }
 
 .month {
@@ -206,6 +222,7 @@ h1 {
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 60px;
+  margin-bottom: 60px;
 }
 
 .news {
@@ -234,19 +251,12 @@ h1 {
   font-size: 16px;
 }
 
-.Afisha {
-  color: #191919;
-  height: auto;
-  font-size: 48px;
-  font-weight: bold;
-  align-items: flex-start;
-}
-
 .anonses {
   display: flex;
   flex-direction: column;
   gap: 24px;
   height: 400px;
+  width: max-content;
 }
 
 .anonses_header {
@@ -254,7 +264,7 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-top: 60px;
+  margin-bottom: 60px;
   height: auto;
   color: #191919;
   font-size: 24px;
@@ -366,5 +376,10 @@ footer {
 
 .name {
   display: block;
-  /* padding-right: 15%; */
+}
+
+.fests {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }

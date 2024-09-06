@@ -464,3 +464,81 @@ footer {
 .calendar_header {
   position: relative;
 }
+
+a {
+  text-decoration: none;
+  color: #191919;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.header_for_afisha {
+  display: flex;
+  color: #191919;
+  height: auto;
+  font-size: 48px;
+  font-weight: bold;
+  align-items: flex-start;
+  padding-bottom: 0px;
+  margin-bottom: 0;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.body_vivaldi {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-vivaldi {
+  display: flex;
+  justify-content: center;
+  color: #191919;
+  /* gap: 120px; */
+  padding: 0 0 100px 0;
+}
+
+.content-vivaldi {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40%;
+}
+
+.big-img-vivald {
+  width: 70%;
+}
+
+.small-imgs {
+  display: flex;
+  gap: 24px;
+  padding-top: 20px;
+}
+
+.sides {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 0 30px 0;
+}
+
+.side-contacts {
+  color: #191919;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.big-map-contacts {
+  padding-bottom: 90px;
+}
+
+.black-color {
+  color: #ffffff;
+}
+
+.black-color:hover {
+  color: #f0f0f0;
+}

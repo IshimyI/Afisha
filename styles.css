@@ -309,6 +309,7 @@ h1 {
   grid-template-rows: repeat(5, 40px);
   color: white;
   gap: 4px;
+  padding-top: 10px;
 }
 
 .grid-item {
@@ -449,4 +450,17 @@ footer {
   border-radius: 8px;
   color: white;
   background-color: #05b093;
+}
+
+.calendar_txt {
+  position: absolute;
+  bottom: 12%;
+  left: 5%;
+  font-size: 24px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.calendar_header {
+  position: relative;
 }

@@ -603,12 +603,25 @@ footer {
     gap: 0;
   }
 
+  .events_main {
+    display: flex;
+
+    max-width: 380px;
+  }
+
   .events_main-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 380px;
+    max-width: 100%;
+    padding: 15px 15px 15px 15px;
+  }
+
+  .names {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .news-calendar {
@@ -616,5 +629,91 @@ footer {
     flex-direction: column;
     justify-content: center;
     max-width: 100%;
+  }
+
+  .news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .news-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .calendar {
+    max-width: 100%;
+  }
+
+  .calendar_header {
+    max-width: 380px;
+  }
+
+  .calendar_header-img {
+    display: flex;
+    max-width: 380px;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  .grid-month-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 20px 0;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .buttons-month {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid {
+    padding: 0 35px 0 35px;
+  }
+
+  .months {
+    padding-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .anonses_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    gap: 0;
+  }
+
+  .anonses {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    padding-bottom: 30px;
+  }
+
+  .anonses_main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main {
+    padding: 0;
+    margin: 0;
   }
 }

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -5,24 +9,42 @@ body {
   background-color: #ededed;
 }
 
-main {
+/* utilities */
+
+.icon {
   display: flex;
   justify-content: center;
+  width: 40px;
+  height: 40px;
   align-items: center;
-  flex-direction: column;
-  max-width: 1920px;
-  margin: 0 auto;
 }
 
+.links {
+  display: flex;
+  gap: 24px;
+  padding: 0;
+  align-items: center;
+}
+
+.title {
+  color: #191919;
+  height: auto;
+  font-size: 48px;
+  font-weight: bold;
+  align-items: flex-start;
+}
+
+/* header */
+
 .header {
-  padding: 32px 64px 32px 64px;
+  padding: 32px 15px 32px 15px;
   gap: 10px;
   margin: 0;
   color: #ffffff;
   background-color: #191919;
 }
 
-.header-info {
+.header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -43,7 +65,29 @@ main {
   gap: 10px;
   color: #ffffff;
   background-color: #191919;
+  cursor: pointer;
 }
+
+.dots {
+  width: 6px;
+  height: 6px;
+  border-radius: 1px;
+  background-color: rgb(255, 255, 255);
+  rotate: 45deg;
+}
+
+/* main */
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+/* slider */
 
 .slider {
   display: flex;
@@ -66,15 +110,7 @@ main {
   color: #191919;
 }
 
-.dots {
-  width: 6px;
-  height: 6px;
-  border-radius: 1px;
-  background-color: rgb(255, 255, 255);
-  rotate: 45deg;
-}
-
-.opera {
+.preview {
   display: flex;
   padding: 12px 16px 12px 16px;
   gap: 10px;
@@ -82,7 +118,9 @@ main {
   border-radius: 16px;
 }
 
-.event_posters {
+/* event-posters */
+
+.events {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -93,7 +131,7 @@ h1 {
   color: #191919;
 }
 
-.heading-section {
+.events_heading {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -104,28 +142,13 @@ h1 {
   font-size: 24px;
 }
 
-.icon {
-  display: flex;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  align-items: center;
-}
-
-.event_posters-footer {
+.events_main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding: 32px 60px 32px 60px;
   gap: 80px;
-}
-
-.fest {
-  display: flex;
-  gap: 24px;
-  padding: 0;
-  align-items: center;
 }
 
 .names {
@@ -136,7 +159,7 @@ h1 {
   margin: 0;
 }
 
-.poster {
+.events_main-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -170,13 +193,13 @@ h1 {
   justify-content: center;
 }
 
-.img-2 {
+.events_main-img {
   padding: 0;
   display: flex;
   justify-content: flex-start;
 }
 
-.poster-info {
+.events_main-info {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -208,13 +231,7 @@ h1 {
   margin: 0;
 }
 
-.news_header {
-  color: #191919;
-  height: auto;
-  font-size: 48px;
-  font-weight: bold;
-  align-items: flex-start;
-}
+/* news-calendar */
 
 .news-calendar {
   display: flex;
@@ -230,19 +247,19 @@ h1 {
   height: auto;
 }
 
-.news-footer {
+.news-main {
   display: flex;
   flex-direction: row;
   gap: 24px;
 }
 
-.new {
+.news-main_item {
   flex-direction: row;
   color: #191919;
   gap: 24px;
 }
 
-.news-h1 {
+.news-title {
   font-size: 24px;
   font-weight: 900;
 }
@@ -250,6 +267,8 @@ h1 {
 .news-p {
   font-size: 16px;
 }
+
+/* anonses */
 
 .anonses {
   display: flex;
@@ -270,22 +289,14 @@ h1 {
   font-size: 24px;
 }
 
-.anonses_word {
-  color: #191919;
-  height: auto;
-  font-size: 48px;
-  font-weight: bold;
-  align-items: flex-start;
-}
-
-.anonses_footer {
+.anonses_main {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 27px;
 }
 
-.anons {
+.anonses_main-item {
   display: flex;
   flex-direction: row;
   color: #191919;
@@ -293,7 +304,7 @@ h1 {
   gap: 27px;
 }
 
-.data {
+.anonses_date {
   border: none;
   width: 100px;
   height: 98px;
@@ -319,6 +330,7 @@ h1 {
   width: 100%;
   height: 100%;
   background-color: #1919194d;
+  cursor: pointer;
 }
 
 .grid-item:nth-child(7n + 2),
@@ -327,76 +339,9 @@ h1 {
   background-color: #05b093;
 }
 
-footer {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 32px 0px 32px 0px;
-  gap: 10px;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin: 0;
-  color: #ffffff;
-  background-color: #191919;
-  border-bottom: 1px;
-  border-color: white;
-}
-
-.info {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 32px 0px 32px 0px;
-  gap: 10px;
-  width: 80%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin: 0;
-  color: #ffffff;
-  background-color: #191919;
-  border-bottom: 1px solid white;
-}
-
-.fests-body {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 24px;
-  color: #ffffff;
-  background-color: #191919;
-}
-
-.sait-name {
-  color: white;
-}
-
 .name {
   display: block;
-}
-
-.fests {
-  display: flex;
-  flex-direction: column;
-}
-
-.fests-name {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.name1 {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  align-self: flex-start;
-}
-
-.contacts-name {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-right: 20px;
 }
 
 .grid-month-buttons {
@@ -431,7 +376,7 @@ footer {
   width: 120px;
 }
 
-.arrow1 {
+.arrow {
   align-items: flex-end;
   padding: 12px;
   border: none;
@@ -440,19 +385,10 @@ footer {
   border-radius: 8px;
   color: white;
   background-color: #05b093;
-}
-.arrow2 {
-  align-items: flex-end;
-  padding: 12px;
-  border: none;
-  width: 48px;
-  height: 48px;
-  border-radius: 8px;
-  color: white;
-  background-color: #05b093;
+  cursor: pointer;
 }
 
-.calendar_txt {
+.calendar_title {
   position: absolute;
   bottom: 12%;
   left: 5%;
@@ -541,4 +477,144 @@ a:hover {
 
 .black-color:hover {
   color: #f0f0f0;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 32px 0px 32px 0px;
+  gap: 10px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+  color: #ffffff;
+  background-color: #191919;
+  border-bottom: 1px;
+  border-color: white;
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 32px 0px 32px 0px;
+  gap: 10px;
+  width: 80%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+  color: #ffffff;
+  background-color: #191919;
+  border-bottom: 1px solid white;
+}
+
+.footer_logo {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-self: flex-start;
+}
+
+.footer_nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_nav-links {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+  color: #ffffff;
+  background-color: #191919;
+}
+
+.footer_nav-title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer_contacts-title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer-note {
+  color: white;
+}
+
+/* media */
+
+@media screen and (max-width: 380px) {
+  body {
+    width: 380px !important;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-right: 2px;
+    background-color: purple;
+  }
+
+  .slider {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 60px;
+    color: #191919;
+    width: 380px;
+  }
+
+  .main-img {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  .slider_previews {
+    display: flex;
+    flex-direction: column;
+    /* gap: 16px; */
+    color: #191919;
+  }
+
+  .event_posters {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 180px;
+    max-width: 380px;
+  }
+
+  .events_heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    gap: 0;
+  }
+
+  .events_main-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 380px;
+  }
+
+  .news-calendar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+  }
 }

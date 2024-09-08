@@ -10,14 +10,14 @@ btns.forEach((btn) => {
   });
 });
 
-const arrow1 = document.querySelector(".arrow1");
-arrow1.addEventListener("click", () => {
+const arrowPrev = document.querySelector(".arrow-prev");
+arrowPrev.addEventListener("click", () => {
   console.log("click1");
   addEventListener;
 });
 
-const arrow2 = document.querySelector(".arrow2");
-arrow2.addEventListener("click", () => {
+const arrowNext = document.querySelector(".arrow-next");
+arrowNext.addEventListener("click", () => {
   console.log("click2");
 });
 const months = [
@@ -39,14 +39,14 @@ let currentMonthIndex = 6;
 
 const month = document.querySelector(".months");
 if (
-  arrow1.addEventListener("click", () => {
+  arrowPrev.addEventListener("click", () => {
     currentMonthIndex = (currentMonthIndex - 1 + months.length) % months.length;
     month.textContent = months[currentMonthIndex];
   })
 );
 
 if (
-  arrow2.addEventListener("click", () => {
+  arrowNext.addEventListener("click", () => {
     currentMonthIndex = (currentMonthIndex + 1) % months.length;
     month.textContent = months[currentMonthIndex];
   })

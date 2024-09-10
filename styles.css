@@ -449,6 +449,7 @@ a:hover {
 
 .small-imgs {
   display: flex;
+  flex-direction: row;
   gap: 24px;
   padding-top: 20px;
 }
@@ -549,11 +550,11 @@ footer {
   color: white;
 }
 
-/* media */
+/* media phone*/
 
-@media screen and (max-width: 380px) {
-  body {
-    width: 380px !important;
+@media screen and (max-width: 480px) {
+  .main {
+    width: 320px !important;
   }
 
   .header {
@@ -569,7 +570,7 @@ footer {
     gap: 24px;
     padding-top: 60px;
     color: #191919;
-    width: 380px;
+    max-width: 100%;
   }
 
   .main-img {
@@ -587,7 +588,15 @@ footer {
   }
 
   .events {
-    width: 380px;
+    width: 100%;
+  }
+
+  .news-main_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
   }
 
   .event_posters {
@@ -595,21 +604,21 @@ footer {
     flex-direction: column;
     gap: 24px;
     margin-bottom: 180px;
-    max-width: 380px;
+    max-width: 80%;
   }
 
   .events_heading {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 380px;
+    max-width: 100%;
     gap: 0;
   }
 
   .events_main {
     display: flex;
 
-    max-width: 380px;
+    max-width: 80%;
   }
 
   .events_main-item {
@@ -656,12 +665,12 @@ footer {
   }
 
   .calendar_header {
-    max-width: 380px;
+    max-width: 100%;
   }
 
   .calendar_header-img {
     display: flex;
-    max-width: 380px;
+    max-width: 100%;
     height: auto;
     border-radius: 12px;
   }
@@ -736,7 +745,7 @@ footer {
   .sides {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
     padding: 0 0 40px 0;
     justify-content: center;
     align-items: center;
@@ -749,27 +758,27 @@ footer {
     justify-content: center;
     align-items: center;
     margin: 0;
-    width: 100%;
+    width: 80%;
   }
 
   .side-contacts-text {
     display: flex;
     flex-direction: column;
-    max-width: 380px;
+    max-width: 80%;
     padding: 0;
     justify-content: center;
     align-items: center;
   }
 
   .big-map-contacts-img {
-    max-width: 380px;
+    max-width: 100%;
   }
 
   .body_vivaldi {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-width: 380px;
+    max-width: 80%;
     justify-content: center;
     align-items: center;
   }
@@ -778,7 +787,7 @@ footer {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-width: 380px;
+    max-width: 100%;
     justify-content: center;
     align-items: center;
   }
@@ -793,7 +802,7 @@ footer {
   .footer-vivaldi {
     display: flex;
     flex-direction: column;
-    max-width: 380px;
+    max-width: 100%;
     justify-content: center;
     align-items: center;
   }
@@ -801,7 +810,7 @@ footer {
   .content-vivaldi {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 100%;
     padding: 0 40px 0 40px;
     justify-content: center;
     align-items: center;
@@ -816,7 +825,7 @@ footer {
   .header_for_afisha-txt {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 100%;
     justify-content: center;
     align-items: center;
   }
@@ -830,5 +839,591 @@ footer {
 
   .footer-vivaldi {
     padding-bottom: 40px;
+  }
+}
+
+/* media tablet*/
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .main {
+    width: 481px !important;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-right: 2px;
+  }
+
+  .slider {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 60px;
+    color: #191919;
+    max-width: 80%;
+  }
+
+  .main-img {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  .slider_previews {
+    display: flex;
+    flex-direction: column;
+    /* gap: 16px; */
+    color: #191919;
+  }
+
+  .events {
+    width: 80%;
+  }
+
+  .event_posters {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 180px;
+    max-width: 80%;
+  }
+
+  .events_heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    gap: 0;
+  }
+
+  .events_main {
+    display: flex;
+
+    max-width: 100%;
+  }
+
+  .events_main-img {
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .events_main-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .names {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .news-calendar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 80%;
+  }
+
+  .news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .news-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .news-main_item {
+    flex-direction: column;
+    color: #191919;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .calendar {
+    max-width: 100%;
+  }
+
+  .news-main_img {
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    align-items: center;
+  }
+
+  .calendar_header {
+    max-width: 100%;
+  }
+
+  .calendar_header-img {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  .grid-month-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 20px 0;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .buttons-month {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .grid {
+    padding: 0 90px 0 90px;
+  }
+
+  .months {
+    padding-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .anonses_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    gap: 0;
+  }
+
+  .anonses {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    padding-bottom: 30px;
+  }
+
+  .anonses_main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main {
+    padding: 0;
+    margin: 0;
+  }
+
+  .contacts-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sides {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 0 0 40px 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .side-contacts {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 80%;
+  }
+
+  .side-contacts-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .big-map-contacts-img {
+    max-width: 100%;
+  }
+
+  .body_vivaldi {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 80%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header_for_afisha {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .big-img-vivald {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-vivaldi {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content-vivaldi {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 40px 0 40px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .small-imgs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header_for_afisha-txt {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-vivald {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-vivaldi {
+    padding-bottom: 40px;
+  }
+}
+
+/* media laptop*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .main {
+    width: 768px !important;
+  }
+
+  .slider {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 60px;
+    color: #191919;
+    max-width: 100%;
+  }
+
+  .main-img {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slider_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slider_previews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .preview {
+    display: flex;
+    align-items: center;
+    width: 80%;
+  }
+
+  .events_heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100%;
+    gap: 80px;
+  }
+
+  .events_main-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+  }
+
+  .events_main-class-img {
+    order: -1;
+  }
+
+  .events_main-img {
+    width: 120%;
+  }
+
+  .ticket {
+    width: 200px;
+  }
+
+  .news-calendar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .anonses_header {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+  }
+
+  .anonses_main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .anonses {
+    padding-bottom: 350px;
+  }
+
+  .calendar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .events {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+  }
+
+  .img-vivald {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    display: flex;
+  }
+
+  .footer-vivaldi {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .content-vivaldi {
+    padding: 0;
+    margin: 0;
+    width: 60%;
+  }
+
+  .small-imgs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .small-img-vivald {
+    width: 80%;
+  }
+
+  .big-img-vivald {
+    padding: 0;
+    margin: 0;
+  }
+
+  .body_vivaldi {
+    display: flex;
+  }
+}
+/* media desktop */
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .main {
+    width: 1024px !important;
+  }
+
+  .events_heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100%;
+    gap: 80px;
+  }
+
+  .slider_main {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+  }
+
+  .main-img {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+
+  .events_main-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+  }
+
+  .events_main-class-img {
+    order: -1;
+  }
+
+  .events_main-img {
+    width: 100%;
+  }
+
+  .ticket {
+    width: 200px;
+  }
+
+  .small-imgs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .news-calendar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+  }
+
+  .news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .news-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .news-main_item {
+    display: flex;
+    flex-direction: column;
+    color: #191919;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .calendar {
+    max-width: 100%;
+  }
+
+  .news-main_img {
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    align-items: center;
+  }
+
+  .anonses_header {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+  }
+
+  .anonses_main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .anonses {
+    padding-bottom: 350px;
+  }
+
+  .side-contacts-text {
+    flex-direction: column;
+    max-width: 80%;
+    padding: 0;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 0;
+  }
+
+  .sides {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    padding: 0 0 30px 0;
+    width: 100%;
+    gap: 0;
+  }
+
+  .side-contacts {
+    color: #191919;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+
+  .big-map-contacts {
+    width: 100%;
   }
 }

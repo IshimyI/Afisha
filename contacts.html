@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-info">
+      <div class="header-container">
         <p class="name">Сайт Концертно - экскурсионных программ</p>
         <nav class="nav">
           <a class="btns" href="afisha.html">Афиша</a>
@@ -33,11 +33,11 @@
         </div>
         <div class="sides">
           <div class="side-contacts">
-            <div>
+            <div class="side-contacts-text">
               <h3>Адрес:</h3>
               <p>Россия, 191025, г. Санкт-Петербург, Невский пр., д. 1</p>
             </div>
-            <div>
+            <div class="side-contacts-text">
               <h3>Режим работы кассы Дворца:</h3>
               <p>понедельник: выходной</p>
               <p>вторник-суббота: с 11.00 до 19.00 час.</p>
@@ -46,31 +46,31 @@
             </div>
           </div>
           <div class="side-contacts">
-            <div>
+            <div class="side-contacts-text">
               <h3>Билетная касса, заказ экскурсий:</h3>
               <p>(812) 123-45-67</p>
             </div>
-            <div>
+            <div class="side-contacts-text">
               <h3>Аренда концертного/конференц зала:</h3>
               <p>(812) 123-45-67</p>
             </div>
-            <div>
+            <div class="side-contacts-text">
               <h3>ВКонтакте:</h3>
               <p>vk.com/nevskiy1</p>
             </div>
           </div>
         </div>
         <div class="big-map-contacts">
-          <img src="big-map-contacts.svg" />
+          <img src="big-map-contacts.svg" class="big-map-contacts-img" />
         </div>
       </div>
     </main>
-    <footer>
-      <div class="info">
-        <p class="name1">Сайт Концертно - экскурсионных программ</p>
-        <div class="fests">
-          <p class="fests-name">Мероприятия</p>
-          <div class="fests-body">
+    <footer class="footer">
+      <div class="footer_container">
+        <p class="footer_logo">Сайт Концертно - экскурсионных программ</p>
+        <nav class="footer_nav">
+          <p class="footer_nav-title">Мероприятия</p>
+          <div class="footer_nav-links">
             <a href="index.html#calendar">
               <button class="btns">Экскурсии</button>
             </a>
@@ -81,12 +81,12 @@
               <button class="btns">Афиша</button>
             </a>
           </div>
-        </div>
-        <div class="contacts" id="contacts">
+        </nav>
+        <div class="footer_contacts" id="contacts">
           <a href="contacts.html" class="black-color">
-            <p class="contacts-name">Контакты</p>
+            <p class="footer_contacts-title">Контакты</p>
           </a>
-          <div class="contacts-body">
+          <div class="footer_contacts-main">
             <a href="contacts.html" class="black-color">
               <p>г. Санкт-Петербург, Невский пр., д. 1</p>
               <p>text@mail.ru</p>
@@ -95,7 +95,7 @@
           </div>
         </div>
       </div>
-      <p class="sait-name">Сайт ко</p>
+      <p class="footer_note">Сайт ко</p>
     </footer>
   </body>
 </html>

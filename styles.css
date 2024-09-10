@@ -587,6 +587,10 @@ footer {
     color: #191919;
   }
 
+  .events {
+    width: 380px;
+  }
+
   .event_posters {
     display: flex;
     flex-direction: column;
@@ -599,7 +603,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 100%;
+    max-width: 380px;
     gap: 0;
   }
 
@@ -615,7 +619,7 @@ footer {
     justify-content: center;
     align-items: center;
     max-width: 100%;
-    padding: 15px 15px 15px 15px;
+    /* padding: 15px 15px 15px 15px; */
   }
 
   .names {
@@ -644,6 +648,12 @@ footer {
 
   .calendar {
     max-width: 100%;
+  }
+
+  .news-main_img {
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
   }
 
   .calendar_header {
@@ -715,5 +725,111 @@ footer {
   .main {
     padding: 0;
     margin: 0;
+  }
+
+  .contacts-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sides {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 0 40px 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .side-contacts {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+  }
+
+  .side-contacts-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 380px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .big-map-contacts-img {
+    max-width: 380px;
+  }
+
+  .body_vivaldi {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 380px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header_for_afisha {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 380px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .big-img-vivald {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-vivaldi {
+    display: flex;
+    flex-direction: column;
+    max-width: 380px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content-vivaldi {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 0 40px 0 40px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .small-imgs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header_for_afisha-txt {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-vivald {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-vivaldi {
+    padding-bottom: 40px;
   }
 }

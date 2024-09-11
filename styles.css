@@ -55,8 +55,10 @@ body {
 .nav {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
+  padding: 0 1rem;
 }
 
 .btns {
@@ -554,6 +556,7 @@ footer {
 @media screen and (max-width: 480px) {
   .main {
     width: 320px !important;
+    /* padding-inline: 5px; */
   }
 
   .header {
